@@ -35,6 +35,7 @@
     "github>trueforge-org/renovate-config//.github/renovate/kinds/helm.json5",
     "github>trueforge-org/renovate-config//.github/renovate/special/groups.json5",
     "github>trueforge-org/renovate-config//.github/renovate/special/schedules.json5",
+    "github>trueforge-org/renovate-config//.github/renovate/basics/commitDefaults.json5",
     "github>trueforge-org/renovate-config//.github/renovate/basics/commitMessage.json5",
     "github>trueforge-org/renovate-config//.github/renovate/basics/commitType.json5",
     "github>trueforge-org/renovate-config//.github/renovate/basics/labels.json5",
