@@ -1,7 +1,7 @@
 {
   "packageRules": [
     {
-      "matchManagers": ["helm-values"],
+      "matchManagers": ["helm-values", "helmv3"],
       "semanticCommitScope": "helm"
     },
     {
@@ -25,9 +25,5 @@
       "matchPackagePatterns": [".*/.*"],
       "semanticCommitScope": "flux"
     },
-    {
-      "matchManagers": ["helmv3"],
-      "semanticCommitScope": "helm"
-    }
   ]
 }
