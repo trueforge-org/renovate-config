@@ -43,7 +43,7 @@
     },
     {
       "matchManagers": ["helmv3"],
-      "addLabels": ["renovate/helm"]
+      "addLabels": ["renovate/container", 'app/{{parentDir}}'],
     },
     {
       "matchManagers": ["go"],
