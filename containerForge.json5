@@ -3,21 +3,6 @@
   packageRules: [
     {
       description: [
-        'Release Rules for App Updates',
-      ],
-      addLabels: [
-        'app/{{parentDir}}',
-      ],
-      additionalBranchPrefix: '{{parentDir}}-',
-      matchFileNames: [
-        '**/docker-bake.hcl',
-        '**/Dockerfile',
-      ],
-      semanticCommitScope: '{{parentDir}}',
-      semanticCommitType: 'release',
-    },
-    {
-      description: [
         'Allowed Ubuntu Version for Base Images',
       ],
       matchDatasources: [

@@ -27,7 +27,7 @@
     },
     {
       "matchManager": ["docker"],
-      "addLabels": ["renovate/container"]
+      "addLabels": ["renovate/container", 'app/{{parentDir}}'],
     },
     {
       "matchManager": ["helm-values"],

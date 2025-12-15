@@ -6,6 +6,7 @@
       "Dockerfile$", // Matches Dockerfile files regardless of their path
       "docker-compose\\.ya?ml$", // Matches docker-compose files
       "docker-compose\\.ya?ml\\.j2$", // Matches Jinja2 templated docker-compose files
+      "docker-bake.hcl$",
       "\\.github/workflows/.*\\.ya?ml$", // Matches all workflow YAML files
       "\\.github/workflows/.*\\.ya?ml\\.j2$", // Matches Jinja2 templated workflow files
       // "(^|/)clusters/.+\\.ya?ml$",
