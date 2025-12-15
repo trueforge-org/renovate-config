@@ -69,10 +69,6 @@
       "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
       "semanticCommitType": "chore",
       "semanticCommitScope": "helm"
-    },
-    {
-      "matchPaths": ["clustertool/**"],
-      "commitMessageSuffix": "(clustertool)"
     }
   ]
 }
