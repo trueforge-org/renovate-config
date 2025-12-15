@@ -7,23 +7,23 @@
     },
     {
       "matchUpdateTypes": ["minor"],
-      "addLabels": ["type/minor", "automerge"]
+      "addLabels": ["type/minor"]
     },
     {
       "matchUpdateTypes": ["patch"],
-      "addLabels": ["type/patch", "automerge"]
+      "addLabels": ["type/patch"]
     },
     {
       "matchUpdateTypes": ["digest"],
-      "addLabels": ["type/digest", "automerge"]
+      "addLabels": ["type/digest"]
     },
     {
       "matchUpdateTypes": ["pin", "pinDigest"],
-      "addLabels": ["type/pin", "automerge"]
+      "addLabels": ["type/pin"]
     },
     {
       "matchUpdateTypes": ["lockfile"],
-      "addLabels": ["type/lockfile", "automerge"]
+      "addLabels": ["type/lockfile"]
     },
     {
       "matchManager": ["docker", "helm-values"],
