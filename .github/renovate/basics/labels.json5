@@ -31,7 +31,7 @@
     },
     {
       "matchManager": ["helm-values"],
-      "addLabels": ["renovate/helm-values"]
+      "addLabels": ["renovate/container", 'app/{{parentDir}}'],
     },
     {
       "matchDatasources": ["github-releases", "github-tags"],
