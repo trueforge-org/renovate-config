@@ -26,8 +26,12 @@
       "addLabels": ["type/lockfile"]
     },
     {
-      "matchManager": ["docker", "helm-values"],
+      "matchManager": ["docker"],
       "addLabels": ["renovate/container"]
+    },
+    {
+      "matchManager": ["helm-values"],
+      "addLabels": ["renovate/helm-values"]
     },
     {
       "matchDatasources": ["github-releases", "github-tags"],
@@ -40,6 +44,18 @@
     {
       "matchManagers": ["helmv3"],
       "addLabels": ["renovate/helm"]
+    },
+    {
+      "matchManagers": ["go"],
+      "addLabels": ["renovate/go"]
+    },
+    {
+      "matchManagers": ["npm"],
+      "addLabels": ["renovate/npm"]
+    },
+    {
+      "matchManagers": ["flux"],
+      "addLabels": ["renovate/flux"]
     }
   ]
 }

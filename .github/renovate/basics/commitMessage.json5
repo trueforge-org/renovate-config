@@ -10,7 +10,6 @@
       "updateTypes": ["major", "minor", "patch"],
       "commitMessageTopic": "image {{depName}}",
       "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
-      "semanticCommitType": "chore",
       "semanticCommitScope": "helm"
     },
     {
@@ -18,7 +17,6 @@
       "updateTypes": ["digest", "pin"],
       "commitMessageTopic": "image {{depName}}",
       "commitMessageExtra": "digest to {{newDigestShort}}",
-      "semanticCommitType": "chore",
       "semanticCommitScope": "helm"
     },
     {
@@ -26,7 +24,6 @@
       "updateTypes": ["major", "minor", "patch"],
       "commitMessageTopic": "image {{depName}}",
       "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
-      "semanticCommitType": "chore",
       "semanticCommitScope": "container"
     },
     {
@@ -34,7 +31,6 @@
       "updateTypes": ["digest", "pin", "pinDigest"],
       "commitMessageTopic": "image {{depName}}",
       "commitMessageExtra": "digest to {{newDigestShort}}",
-      "semanticCommitType": "chore",
       "semanticCommitScope": "container"
     },
     {
@@ -42,7 +38,6 @@
       "matchPackagePatterns": ["!(.*/.*)"],
       "commitMessageTopic": "chart {{depName}}",
       "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
-      "semanticCommitType": "chore",
       "semanticCommitScope": "flux"
     },
     {
@@ -51,7 +46,6 @@
       "matchPackagePatterns": [".*/.*"],
       "commitMessageTopic": "image {{depName}}",
       "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
-      "semanticCommitType": "chore",
       "semanticCommitScope": "flux"
     },
     {
@@ -60,14 +54,12 @@
       "matchPackagePatterns": [".*/.*"],
       "commitMessageTopic": "image {{depName}}",
       "commitMessageExtra": "digest to {{newDigestShort}}",
-      "semanticCommitType": "chore",
       "semanticCommitScope": "flux"
     },
     {
       "matchManagers": ["helmv3"],
       "commitMessageTopic": "chart {{depName}}",
       "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
-      "semanticCommitType": "chore",
       "semanticCommitScope": "helm"
     }
   ]
