@@ -1,12 +1,16 @@
 {
   "packageRules": [
     {
-      "matchManagers": ["helm-values", "helmv3"],
-      "semanticCommitScope": "helm"
+      "matchManagers": ["helmv3"],
+      "semanticCommitScope": "helm-deps",
+    },
+    {
+      "matchManagers": ["helm-values"],
+      "semanticCommitScope": "{{parentDir}}",
     },
     {
       "matchManagers": ["docker"],
-      "semanticCommitScope": "container"
+      "semanticCommitScope": "{{parentDir}}"
     },
     {
       "matchManagers": ["flux"],

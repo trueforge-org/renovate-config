@@ -101,7 +101,7 @@
       ],
       groupName: 'ubuntu',
       additionalBranchPrefix: 'update-',
-      semanticCommitScope: 'update',
+      semanticCommitScope: 'ubuntu-dep',
     },
     {
       matchDatasources: [
@@ -112,7 +112,7 @@
       ],
       groupName: 'python',
       additionalBranchPrefix: 'update-',
-      semanticCommitScope: 'update',
+      semanticCommitScope: 'python-dep',
     },
     {
       matchDatasources: [
@@ -123,7 +123,7 @@
       ],
       groupName: 'golang',
       additionalBranchPrefix: 'update-',
-      semanticCommitScope: 'update',
+      semanticCommitScope: 'golang-dep',
     },
     {
       matchDatasources: [
@@ -134,7 +134,7 @@
       ],
       groupName: 'node',
       additionalBranchPrefix: 'update-',
-      semanticCommitScope: 'update',
+      semanticCommitScope: 'node-dep',
     },
     {
       matchDatasources: [
@@ -145,7 +145,7 @@
       ],
       groupName: 'python-node',
       additionalBranchPrefix: 'update-',
-      semanticCommitScope: 'update',
+      semanticCommitScope: 'python-node-dep',
     },
     {
       matchDatasources: [
@@ -156,7 +156,7 @@
       ],
       groupName: 'java8',
       additionalBranchPrefix: 'update-',
-      semanticCommitScope: 'update',
+      semanticCommitScope: 'java8-dep',
     },
     {
       matchDatasources: [
@@ -167,7 +167,7 @@
       ],
       groupName: 'java11',
       additionalBranchPrefix: 'update-',
-      semanticCommitScope: 'update',
+      semanticCommitScope: 'java11-dep',
     },
     {
       matchDatasources: [
@@ -178,7 +178,7 @@
       ],
       groupName: 'java17',
       additionalBranchPrefix: 'update-',
-      semanticCommitScope: 'update',
+      semanticCommitScope: 'java17-dep',
     },
     {
       matchDatasources: [
@@ -189,7 +189,7 @@
       ],
       groupName: 'java21',
       additionalBranchPrefix: 'update-',
-      semanticCommitScope: 'update',
+      semanticCommitScope: 'java21-dep',
     },
     {
       matchDatasources: [
@@ -200,7 +200,7 @@
       ],
       groupName: 'java25',
       additionalBranchPrefix: 'update-',
-      semanticCommitScope: 'update',
+      semanticCommitScope: 'java25-dep',
     },
     {
       matchDatasources: [
@@ -211,7 +211,7 @@
       ],
       groupName: 'steamcmd',
       additionalBranchPrefix: 'update-',
-      semanticCommitScope: 'update',
+      semanticCommitScope: 'steamcmd-dep',
     },
   ]
 }

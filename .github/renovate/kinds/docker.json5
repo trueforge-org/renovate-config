@@ -15,6 +15,5 @@
     "branchPrefix": "renovate/docker-",
     "enabled": true, // Enable Docker image updates
     "updateTypes": ["major", "minor", "patch", "digest", "pin", "pinDigest"], // Allow updates for all version types
-    "semanticCommitScope": "container",
   }
 }
