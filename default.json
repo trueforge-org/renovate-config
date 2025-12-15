@@ -38,6 +38,7 @@
     "github>trueforge-org/renovate-config//.github/renovate/basics/commitDefaults.json5",
     "github>trueforge-org/renovate-config//.github/renovate/basics/commitMessage.json5",
     "github>trueforge-org/renovate-config//.github/renovate/basics/commitMessageExtra.json5",
+    "github>trueforge-org/renovate-config//.github/renovate/basics/commitMessageTopic.json5",
     "github>trueforge-org/renovate-config//.github/renovate/basics/commitType.json5",
     "github>trueforge-org/renovate-config//.github/renovate/basics/labels.json5",
     "github>trueforge-org/renovate-config//.github/renovate/special/dockerTweaks.json5",

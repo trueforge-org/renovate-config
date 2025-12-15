@@ -1,0 +1,22 @@
+{
+  "packageRules": [
+    {
+      "matchManagers": ["helm-values", "docker"],
+      "commitMessageTopic": "image {{depName}}",
+    },
+    {
+      "matchManagers": ["flux"],
+      "matchPackagePatterns": [".*/.*"],
+      "commitMessageTopic": "image {{depName}}",
+    },
+    {
+      "matchManagers": ["flux"],
+      "matchPackagePatterns": ["!(.*/.*)"],
+      "commitMessageTopic": "chart {{depName}}",
+    },
+    {
+      "matchManagers": ["helmv3"],
+      "commitMessageTopic": "chart {{depName}}",
+    },
+  ]
+}
