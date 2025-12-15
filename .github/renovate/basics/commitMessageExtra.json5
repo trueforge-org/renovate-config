@@ -1,0 +1,12 @@
+{
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
+    },
+    {
+      "matchUpdateTypes": ["digest", "pin", "pinDigest"],
+      "commitMessageExtra": "digest to {{newDigestShort}}",
+    },
+  ]
+}

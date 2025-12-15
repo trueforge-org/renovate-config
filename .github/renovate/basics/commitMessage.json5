@@ -2,37 +2,18 @@
   "packageRules": [
     {
       "matchManagers": ["helm-values"],
-      "updateTypes": ["major", "minor", "patch"],
       "commitMessageTopic": "image {{depName}}",
-      "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
-      "semanticCommitScope": "helm"
-    },
-    {
-      "matchManagers": ["helm-values"],
-      "updateTypes": ["digest", "pin"],
-      "commitMessageTopic": "image {{depName}}",
-      "commitMessageExtra": "digest to {{newDigestShort}}",
       "semanticCommitScope": "helm"
     },
     {
       "matchManagers": ["docker"],
-      "updateTypes": ["major", "minor", "patch"],
       "commitMessageTopic": "image {{depName}}",
-      "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
-      "semanticCommitScope": "container"
-    },
-    {
-      "matchManagers": ["docker"],
-      "updateTypes": ["digest", "pin", "pinDigest"],
-      "commitMessageTopic": "image {{depName}}",
-      "commitMessageExtra": "digest to {{newDigestShort}}",
       "semanticCommitScope": "container"
     },
     {
       "matchManagers": ["flux"],
       "matchPackagePatterns": ["!(.*/.*)"],
       "commitMessageTopic": "chart {{depName}}",
-      "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
       "semanticCommitScope": "flux"
     },
     {
@@ -40,7 +21,6 @@
       "updateTypes": ["major", "minor", "patch"],
       "matchPackagePatterns": [".*/.*"],
       "commitMessageTopic": "image {{depName}}",
-      "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
       "semanticCommitScope": "flux"
     },
     {
@@ -48,13 +28,11 @@
       "updateTypes": ["digest", "pin"],
       "matchPackagePatterns": [".*/.*"],
       "commitMessageTopic": "image {{depName}}",
-      "commitMessageExtra": "digest to {{newDigestShort}}",
       "semanticCommitScope": "flux"
     },
     {
       "matchManagers": ["helmv3"],
       "commitMessageTopic": "chart {{depName}}",
-      "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
       "semanticCommitScope": "helm"
     }
   ]
