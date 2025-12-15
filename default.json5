@@ -33,6 +33,8 @@
     "github>trueforge-org/truecharts//.github/renovate/special/schedules.json5",
     "github>trueforge-org/truecharts//.github/renovate/basics/commitMessage.json5",
     "github>trueforge-org/truecharts//.github/renovate/basics/labels.json5",
+    "github>trueforge-org/truecharts//.github/renovate/special/dockerTweaks.json5",
+    "github>trueforge-org/truecharts//.github/renovate/special/quickMerge.json5",
     "github>trueforge-org/truecharts//.github/renovate/special/customClusterManagers.json5",
     "github>trueforge-org/truecharts//.github/renovate/special/customRules.json5",
     "github>trueforge-org/truecharts//.github/renovate/special/customVersioning.json5",
