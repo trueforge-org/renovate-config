@@ -63,6 +63,8 @@
       ],
       datasourceTemplate: '{{#if datasource}}{{{datasource}}}{{else}}github-releases{{/if}}',
       versioningTemplate: '{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}',
+      "semanticCommitScope": "{{parentDir}}",
+      "addLabels": ["renovate/container-bake"]
     },
     {
       customType: 'regex',
@@ -75,6 +77,8 @@
       ],
       datasourceTemplate: '{{#if datasource}}{{{datasource}}}{{else}}github-releases{{/if}}',
       versioningTemplate: '{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}',
+      "semanticCommitScope": "{{parentDir}}",
+      "addLabels": ["renovate/container-bake"]
     },
   ],
   packageRules: [
