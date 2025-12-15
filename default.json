@@ -15,6 +15,10 @@
   "suppressNotifications": ["prEditedNotification", "prIgnoreNotification"],
   "extends": [
     "config:recommended",
+    "docker:enableMajor",
+    "helpers:pinGitHubActionDigests",
+    ":dependencyDashboard",
+    ":disableRateLimiting",
     "github>trueforge-org/truecharts//.github/renovate/updates/lockfile.json5",
     "github>trueforge-org/truecharts//.github/renovate/updates/pin.json5",
     "github>trueforge-org/truecharts//.github/renovate/updates/digest.json5",
