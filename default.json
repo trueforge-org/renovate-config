@@ -47,6 +47,7 @@
     "github>trueforge-org/renovate-config//.github/renovate/special/customRules.json5",
     "github>trueforge-org/renovate-config//.github/renovate/special/customVersioning.json5",
     "github>trueforge-org/renovate-config//.github/renovate/special/customTalosClustertool.json5",
+    "github>trueforge-org/renovate-config//.github/renovate/special/customForgetoolSiderolabs.json5",
     "github>trueforge-org/renovate-config//.github/renovate/special/devcontainer.json5",
     "github>trueforge-org/renovate-config//.github/renovate/special/grafanadashboards.json5"
   ],
