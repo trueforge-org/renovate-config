@@ -11,9 +11,6 @@
         "lockfile"
       ],
       "addLabels": ["automerge"],
-      "matchPackagePatterns": [
-        "^(?!ghcr\\.io/siderolabs/).*"
-      ]
     }
   ]
 }
