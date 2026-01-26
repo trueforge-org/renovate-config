@@ -4,22 +4,37 @@
     {
       "matchUpdateTypes": ["minor"],
       "addLabels": ["automerge"]
+      "matchPackagePatterns": [
+        "^(?!ghcr\\.io/siderolabs/).*"
+      ]
     },
     {
       "matchUpdateTypes": ["patch"],
       "addLabels": ["automerge"]
+      "matchPackagePatterns": [
+        "^(?!ghcr\\.io/siderolabs/).*"
+      ]
     },
     {
       "matchUpdateTypes": ["digest"],
       "addLabels": ["automerge"]
+      "matchPackagePatterns": [
+        "^(?!ghcr\\.io/siderolabs/).*"
+      ]
     },
     {
       "matchUpdateTypes": ["pin", "pinDigest"],
       "addLabels": ["automerge"]
+      "matchPackagePatterns": [
+        "^(?!ghcr\\.io/siderolabs/).*"
+      ]
     },
     {
       "matchUpdateTypes": ["lockfile"],
       "addLabels": ["automerge"]
+      "matchPackagePatterns": [
+        "^(?!ghcr\\.io/siderolabs/).*"
+      ]
     },
   ]
 }
