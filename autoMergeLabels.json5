@@ -3,35 +3,35 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["minor"],
-      "addLabels": ["automerge"]
+      "addLabels": ["automerge"],
       "matchPackagePatterns": [
         "^(?!ghcr\\.io/siderolabs/).*"
       ]
     },
     {
       "matchUpdateTypes": ["patch"],
-      "addLabels": ["automerge"]
+      "addLabels": ["automerge"],
       "matchPackagePatterns": [
         "^(?!ghcr\\.io/siderolabs/).*"
       ]
     },
     {
       "matchUpdateTypes": ["digest"],
-      "addLabels": ["automerge"]
+      "addLabels": ["automerge"],
       "matchPackagePatterns": [
         "^(?!ghcr\\.io/siderolabs/).*"
       ]
     },
     {
       "matchUpdateTypes": ["pin", "pinDigest"],
-      "addLabels": ["automerge"]
+      "addLabels": ["automerge"],
       "matchPackagePatterns": [
         "^(?!ghcr\\.io/siderolabs/).*"
       ]
     },
     {
       "matchUpdateTypes": ["lockfile"],
-      "addLabels": ["automerge"]
+      "addLabels": ["automerge"],
       "matchPackagePatterns": [
         "^(?!ghcr\\.io/siderolabs/).*"
       ]
