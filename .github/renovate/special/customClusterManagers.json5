@@ -4,7 +4,7 @@
     {
       "customType": "regex",
       "description": ["Process YAML custom dependencies"],
-      "fileMatch": [".ya?ml$"],
+      "fileMatch": [".ya?ml$", ".sh$"],
       "matchStrings": [
         // # renovate: datasource=github-releases depName=k3s-io/k3s
         // k3s_release_version: &version v1.29.0+k3s1
