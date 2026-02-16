@@ -28,5 +28,18 @@
     "matchDepNames": ["ghcr.io/immich-app/immich-machine-learning"],
     "matchFilePatterns": [".*\\.ya?ml$"]
     }
+    ,
+    {
+      "description": ["Require explicit approval for Python docker images (major/minor)"],
+      "matchDatasources": ["docker"],
+      "matchPackagePatterns": [
+        "(?:docker\\.io/)?(?:library/)?python$",
+        "oci\\.trueforge\\.org/containerforge/python$",
+        "ghcr\\.io/trueforge-org/python$"
+      ],
+      "matchUpdateTypes": ["minor", "major"],
+      "dependencyDashboardApproval": true,
+      "addlabels": ["requires/approval"]
+    }
   ]
 }
