@@ -7,7 +7,7 @@
       "matchUpdateTypes": ["minor"],
       "matchPackagePatterns": ["placeholder"],
       "branchPrefix": "block-automerge-minor",
-      "labels": ["type/minor", "unstable"]
+      "labels": ["unstable"]
     },
     {
       "description": ["Block automerge for unstable patches"],
@@ -15,7 +15,7 @@
       "matchUpdateTypes": ["minor", "pin", "digest", "lockFileMaintenance"],
       "matchPackagePatterns": ["placeholder"],
       "branchPrefix": "block-automerge-patch",
-      "labels": ["type/minor", "unstable"]
+      "labels": ["unstable"]
     },
     {
       "description": ["Block minio removal of UI (Dont Remove existing Features to make money off of users!)"],
