@@ -6,12 +6,12 @@
     },
     {
       "matchManagers": ["flux"],
-      "matchPackagePatterns": [".*/.*"],
+      "matchDepNames": ["/.*/.*/"],
       "commitMessageTopic": "image {{depName}}",
     },
     {
       "matchManagers": ["flux"],
-      "matchPackagePatterns": ["!(.*/.*)"],
+      "matchDepNames": ["!/.*/.*/"],
       "commitMessageTopic": "chart {{depName}}",
     },
     {
