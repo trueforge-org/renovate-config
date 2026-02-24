@@ -35,7 +35,10 @@
       "matchPackagePatterns": [
         "(?:docker\\.io/)?(?:library/)?python$",
         "oci\\.trueforge\\.org/containerforge/python$",
-        "ghcr\\.io/trueforge-org/python$"
+        "ghcr\\.io/trueforge-org/python$",
+        "(?:docker\\.io/)?(?:library/)?python-node$",
+        "oci\\.trueforge\\.org/containerforge/python-node$",
+        "ghcr\\.io/trueforge-org/python-node$"
       ],
       "matchUpdateTypes": ["minor", "major"],
       "dependencyDashboardApproval": true,
