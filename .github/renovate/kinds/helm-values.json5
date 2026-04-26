@@ -2,8 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
 
   "helm-values": {
-    "fileMatch": [
-      "((^|.*/)values\\.ya?ml(\\..+)?$|.*-values\\.ya?ml(\\..+)?$)"
+    "managerFilePatterns": [
+      "/((^|.*/)values\\.ya?ml(\\..+)?$|.*-values\\.ya?ml(\\..+)?$)/"
     ],
     "enabled": true, // Enable image reference updates in values.yaml
     "updateTypes": ["major", "minor", "patch", "digest", "pin"], // Allow updates for all version types
