@@ -11,7 +11,7 @@
       matchPackageNames: [
         '/ubuntu/',
       ],
-      allowedVersions: '/24\\.04/',
+      allowedVersions: '/26\\.04/',
     },
     {
       description: [
