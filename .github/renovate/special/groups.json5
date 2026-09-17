@@ -33,6 +33,17 @@
       "separateMinorPatch": true
     },
     {
+      "description": ["Flux Operator Group"],
+      "groupName": "flux-operator",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["/flux-operator/", "/flux-instance/"], 
+      "group": {
+        "commitMessageTopic": "{{{groupName}}} group"
+      },
+      "minimumGroupSize": 2,
+      "separateMinorPatch": true
+    },
+    {
       "description": ["Intel Device Plugins Group"],
       "groupName": "Intel-Device-Plugins",
       "matchPackagePatterns": ["intel-device-plugins"],
