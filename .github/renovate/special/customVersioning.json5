@@ -260,6 +260,11 @@
       "matchDatasources": ["docker"],
       "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-(?<build>.+)$",
       "matchPackageNames": ["ghcr.io/corentinth/it-tools"]
+    },
+    {
+      "matchDatasources": ["docker"],
+      "versioning": "regex:^(?<major>\\d{4})(?<minor>\\d{2})(?<patch>\\d{2})$",
+      "matchPackageNames": ["ghcr.io/tphakala/birdnet-go"]
     }
   ]
 }
