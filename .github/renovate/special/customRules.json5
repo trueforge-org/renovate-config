@@ -18,12 +18,6 @@
       "labels": ["unstable"]
     },
     {
-      "description": ["Block minio removal of UI (Dont Remove existing Features to make money off of users!)"],
-      "matchDatasources": ["docker"],
-      "matchPackagePatterns": ["quay.io/minio/minio"],
-      "dependencyDashboardApproval": true
-    },
-    {
     "matchDatasources": ["docker"],
     "matchDepNames": ["ghcr.io/immich-app/immich-machine-learning"],
     "matchFilePatterns": [".*\\.ya?ml$"]

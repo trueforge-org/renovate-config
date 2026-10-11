@@ -14,9 +14,9 @@
       "versioning": "regex:^v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(?<compatibility>\\+k3s)(?<build>\\d+)$"
     },
     {
-      "description": ["Custom versioning for minio"],
+      "description": ["Custom versioning for MinIO AIStor"],
       "matchDatasources": ["docker"],
-      "matchPackagePatterns": ["quay.io/minio/minio"],
+      "matchPackageNames": ["quay.io/minio/aistor/minio"],
       "versioning": "regex:^RELEASE\\.(?<major>\\d+)-(?<minor>\\d+)-(?<patch>\\d+)T.*Z$"
     },
     {
