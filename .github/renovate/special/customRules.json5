@@ -37,6 +37,24 @@
       "matchUpdateTypes": ["minor", "major"],
       "dependencyDashboardApproval": true,
       "addlabels": ["requires/approval"]
+    },
+    {
+      "description": ["Keep minor and patch updates of the common library in one branch"],
+      "matchManagers": ["helm-values"],
+      "matchFileNames": ["charts/library/common/**", "charts/library/common-test/**"],
+      "separateMinorPatch": false
+    },
+    {
+      // Has to stay behind commitMessageScope.json5, which sets the scope to the parent directory
+      "description": ["Group common library image updates, major updates stay separate"],
+      "groupName": "common",
+      "matchManagers": ["helm-values"],
+      "matchFileNames": ["charts/library/common/**", "charts/library/common-test/**"],
+      "matchUpdateTypes": ["minor", "patch", "digest", "pin", "pinDigest"],
+      "semanticCommitScope": "common",
+      "group": {
+        "commitMessageTopic": "{{{groupName}}} images"
+      }
     }
   ]
 }
