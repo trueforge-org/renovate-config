@@ -275,6 +275,14 @@
       "versioning": "regex:^(?<compatibility>\\d+)\\.(?<minor>\\d+)$"
     },
     {
+      "description": ["Custom versioning for PostgreSQL in common, on the standard images"],
+      "matchDatasources": ["docker"],
+      "matchFileNames": ["charts/library/common/values.yaml"],
+      "matchPackageNames": ["ghcr.io/cloudnative-pg/postgresql"],
+      "matchCurrentValue": "/-standard-trixie$/",
+      "versioning": "regex:^(?<compatibility>\\d+)\\.(?<minor>\\d+)-standard-trixie$"
+    },
+    {
       "description": ["Custom versioning for PostGIS in common"],
       "matchDatasources": ["docker"],
       "matchFileNames": ["charts/library/common/values.yaml"],
