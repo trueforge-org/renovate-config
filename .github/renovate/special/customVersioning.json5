@@ -265,6 +265,45 @@
       "matchDatasources": ["docker"],
       "versioning": "regex:^(?<major>\\d{4})(?<minor>\\d{2})(?<patch>\\d{2})$",
       "matchPackageNames": ["ghcr.io/tphakala/birdnet-go"]
+    },
+    {
+      // The key of each image selects the PostgreSQL major, so the major is kept as compatibility
+      "description": ["Custom versioning for PostgreSQL in common"],
+      "matchDatasources": ["docker"],
+      "matchFileNames": ["charts/library/common/values.yaml"],
+      "matchPackageNames": ["ghcr.io/cloudnative-pg/postgresql"],
+      "versioning": "regex:^(?<compatibility>\\d+)\\.(?<minor>\\d+)$"
+    },
+    {
+      "description": ["Custom versioning for PostGIS in common"],
+      "matchDatasources": ["docker"],
+      "matchFileNames": ["charts/library/common/values.yaml"],
+      "matchPackageNames": ["ghcr.io/cloudnative-pg/postgis"],
+      "versioning": "regex:^(?<compatibility>\\d+)-(?<major>\\d+)\\.(?<minor>\\d+)-standard-trixie$"
+    },
+    {
+      "description": ["Custom versioning for VectorChord in common"],
+      "matchDatasources": ["docker"],
+      "matchFileNames": ["charts/library/common/values.yaml"],
+      "matchPackageNames": ["ghcr.io/tensorchord/cloudnative-vectorchord"],
+      "versioning": "regex:^(?<compatibility>\\d+)\\.(?<build>\\d+)-(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)$"
+    },
+    {
+      "description": ["Custom versioning for pgvecto.rs in common"],
+      "matchDatasources": ["docker"],
+      "matchFileNames": ["charts/library/common/values.yaml"],
+      "matchPackageNames": ["ghcr.io/tensorchord/cloudnative-pgvecto.rs"],
+      "versioning": "regex:^(?<compatibility>\\d+)\\.(?<build>\\d+)-v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)$"
+    },
+    {
+      // In the versioning above, a minor is a new extension version. These can need manual steps, like a reindex
+      "description": ["Require approval for new PostgreSQL extension versions in common"],
+      "matchDatasources": ["docker"],
+      "matchFileNames": ["charts/library/common/values.yaml"],
+      "matchPackageNames": ["ghcr.io/cloudnative-pg/postgis", "ghcr.io/tensorchord/cloudnative-vectorchord", "ghcr.io/tensorchord/cloudnative-pgvecto.rs"],
+      "matchUpdateTypes": ["minor"],
+      "groupName": null,
+      "dependencyDashboardApproval": true
     }
   ]
 }
