@@ -1,0 +1,35 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  // App charts carry a values.schema.json that only $refs the published schema of the common
+  // version they depend on:
+  //   "$ref": ".../truecharts/public/schemas/common/30.4.1.schema.json"
+  // Renovate updates the common dependency in Chart.yaml (helmv3 manager). This keeps the version
+  // in that URL in step with it, by looking up the same package.
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": ["Process the common schema version in the values.schema.json of charts"],
+      "managerFilePatterns": ["/(^|/)charts/[^/]+/[^/]+/values\\.schema\\.json$/"],
+      "matchStrings": ["schemas/common/(?<currentValue>\\d+\\.\\d+\\.\\d+)\\.schema\\.json"],
+      "depNameTemplate": "common",
+      "packageNameTemplate": "oci.trueforge.org/truecharts/common",
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "semver"
+    }
+  ],
+  "packageRules": [
+    {
+      // Same branch, scope and topic as the helmv3 update of common, so that Chart.yaml and
+      // values.schema.json are bumped together in one PR
+      "description": ["Bump the common schema version together with the common chart dependency"],
+      "matchManagers": ["custom.regex"],
+      "matchDepNames": ["common"],
+      "matchFileNames": ["charts/**/values.schema.json"],
+      "branchPrefix": "renovate/helm-",
+      "semanticCommitScope": "helm-deps",
+      "commitMessageTopic": "chart {{depName}}",
+      "pinDigests": false,
+      "addLabels": ["renovate/container", "app/{{parentDir}}"]
+    }
+  ]
+}

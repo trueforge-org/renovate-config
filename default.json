@@ -45,6 +45,7 @@
     "github>trueforge-org/renovate-config//.github/renovate/special/quickMerge.json5",
     "github>trueforge-org/renovate-config//.github/renovate/special/customClusterManagers.json5",
     "github>trueforge-org/renovate-config//.github/renovate/special/customRules.json5",
+    "github>trueforge-org/renovate-config//.github/renovate/special/commonSchema.json5",
     "github>trueforge-org/renovate-config//.github/renovate/special/customVersioning.json5",
     "github>trueforge-org/renovate-config//.github/renovate/special/customTalosClustertool.json5",
     "github>trueforge-org/renovate-config//.github/renovate/special/devcontainer.json5",
