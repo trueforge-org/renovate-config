@@ -5,12 +5,26 @@
   //   "$ref": ".../truecharts/public/schemas/common/30.4.1.schema.json"
   // Renovate updates the common dependency in Chart.yaml (helmv3 manager). This keeps the version
   // in that URL in step with it, by looking up the same package.
+  //
+  // The same schema is published as a Flux HelmRelease schema, one for each common version:
+  //   "# yaml-language-server: $schema=.../truecharts/public/schemas/helm-release/30.4.1.schema.json"
+  // Files with that comment on top (HelmRelease manifests) get the version updated the same way.
   "customManagers": [
     {
       "customType": "regex",
       "description": ["Process the common schema version in the values.schema.json of charts"],
       "managerFilePatterns": ["/(^|/)charts/[^/]+/[^/]+/values\\.schema\\.json$/"],
       "matchStrings": ["schemas/common/(?<currentValue>\\d+\\.\\d+\\.\\d+)\\.schema\\.json"],
+      "depNameTemplate": "common",
+      "packageNameTemplate": "oci.trueforge.org/truecharts/common",
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "semver"
+    },
+    {
+      "customType": "regex",
+      "description": ["Process the common schema version in the helm-release schema comment of YAML files"],
+      "managerFilePatterns": ["/\\.ya?ml$/"],
+      "matchStrings": ["schemas/helm-release/(?<currentValue>\\d+\\.\\d+\\.\\d+)\\.schema\\.json"],
       "depNameTemplate": "common",
       "packageNameTemplate": "oci.trueforge.org/truecharts/common",
       "datasourceTemplate": "docker",
@@ -30,6 +44,15 @@
       "commitMessageTopic": "chart {{depName}}",
       "pinDigests": false,
       "addLabels": ["renovate/container", "app/{{parentDir}}"]
+    },
+    {
+      "description": ["Update the helm-release schema version in the comment of YAML files"],
+      "matchManagers": ["custom.regex"],
+      "matchDepNames": ["common"],
+      "matchFileNames": ["**/*.{yaml,yml}"],
+      "commitMessageTopic": "common helm-release schema",
+      "pinDigests": false,
+      "addLabels": ["renovate/container"]
     }
   ]
 }
