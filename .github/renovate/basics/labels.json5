@@ -3,27 +3,27 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["major"],
-      "addLabels": ["type/major"]
+      "addLabels": ["type/major", "renovate", "skip-coderabbit"]
     },
     {
       "matchUpdateTypes": ["minor"],
-      "addLabels": ["type/minor"]
+      "addLabels": ["type/minor", "renovate", "skip-coderabbit"]
     },
     {
       "matchUpdateTypes": ["patch"],
-      "addLabels": ["type/patch"]
+      "addLabels": ["type/patch", "renovate", "skip-coderabbit"]
     },
     {
       "matchUpdateTypes": ["digest"],
-      "addLabels": ["type/digest"]
+      "addLabels": ["type/digest", "renovate", "skip-coderabbit"]
     },
     {
       "matchUpdateTypes": ["pin", "pinDigest"],
-      "addLabels": ["type/pin"]
+      "addLabels": ["type/pin", "renovate", "skip-coderabbit"]
     },
     {
       "matchUpdateTypes": ["lockfile"],
-      "addLabels": ["type/lockfile"]
+      "addLabels": ["type/lockfile", "renovate", "skip-coderabbit"]
     },
     {
       "matchManager": ["docker"],
